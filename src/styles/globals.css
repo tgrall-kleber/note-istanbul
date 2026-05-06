@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+* {
+  @apply transition-colors duration-200;
+}
+
+html, body, #root {
+  @apply h-full w-full m-0 p-0;
+}
+
+body {
+  @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-white;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 dark:bg-gray-600 rounded-full hover:bg-gray-500 dark:hover:bg-gray-500;
+}
+
+/* Selection styling */
+::selection {
+  @apply bg-blue-500 text-white;
+}
+
+::-moz-selection {
+  @apply bg-blue-500 text-white;
+}
